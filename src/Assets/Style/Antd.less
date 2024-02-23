@@ -1,0 +1,106 @@
+// table
+.ant-table-wrapper {
+   .ant-table-container,
+   table,
+   .ant-table-container table > thead > tr:first-child > *:first-child,
+   .ant-table-container table > thead > tr:first-child > *:last-child {
+      border-radius: 0 !important;
+      border-start-start-radius: 0 !important;
+      border-start-end-radius: 0 !important;
+   }
+
+   .ant-table-thead
+      > tr
+      > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      display: none !important;
+   }
+}
+
+// steps
+.ant-steps {
+   .anticon {
+      color: #e9f8ff;
+   }
+
+   .ant-steps-item-process.ant-steps-item-active > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+      color: #6a81ff;
+   }
+
+   &.ant-steps-label-vertical {
+      .ant-steps-item-tail {
+         margin-inline-start: 63px;
+      }
+
+      &.ant-steps-small:not(.ant-steps-dot) .ant-steps-item-icon {
+         margin-inline-start: 51px;
+      }
+
+      .ant-steps-item-content {
+         width: 127px;
+      }
+   }
+}
+
+// select
+.ant-select {
+   &.ant-select-focused.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+      .ant-select-selector {
+      box-shadow: none;
+   }
+}
+
+// card
+.ant-card {
+   .ant-card-head {
+      padding: 0 16px;
+   }
+
+   .ant-card-body {
+      padding: 16px;
+   }
+
+   .ant-card-actions > li > span {
+      cursor: initial;
+
+      &:hover {
+         color: inherit;
+      }
+   }
+}
+
+// modal
+.ant-modal {
+   .ant-modal-content {
+      padding: 0;
+
+      .ant-modal-header {
+         padding: 12px 20px;
+      }
+
+      .ant-modal-body {
+         padding: 0 20px 20px;
+      }
+   }
+}
+
+// tabs
+.ant-tabs {
+   .ant-tabs-content-holder {
+      height: 100%;
+
+      .ant-tabs-content {
+         height: 100%;
+
+         .ant-tabs-tabpane {
+            height: 100%;
+         }
+      }
+   }
+}
+
+// descriptions
+.ant-descriptions {
+   .ant-descriptions-item-container .ant-descriptions-item-label {
+      color: #a6abbf;
+   }
+}

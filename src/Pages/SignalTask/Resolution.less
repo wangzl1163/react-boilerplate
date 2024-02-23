@@ -1,0 +1,43 @@
+.stagesSvg {
+   display: flex;
+   width: 100%;
+   overflow-x: auto;
+   & > .stageSvg {
+      flex: 0 0 160px;
+      width: 160px;
+      height: 200px;
+      line-height: 40px;
+      margin: 8px;
+      display: inline-block;
+      background: rgba(47, 55, 76, 0.7);
+      &:first-child {
+         margin-left: 0;
+      }
+      &:last-child {
+         margin-right: 0;
+      }
+      .stage-no {
+         height: 40px;
+         padding: 0 10px;
+         font-weight: bold;
+         border-bottom: 1px solid #1a1f2d;
+      }
+      .card-body {
+         position: relative;
+         height: 160px;
+         & > .stage-time-input {
+            position: absolute;
+            top: 64px;
+            left: 36px;
+         }
+      }
+      &.active {
+         background: #2f374c;
+         box-shadow:
+            4px 4px 8px 1px rgba(6, 8, 17, 0.5),
+            -4px -4px 8px 1px rgba(69, 77, 93, 0.5);
+         border-radius: 2px;
+         border: 1px solid #455ddc;
+      }
+   }
+}

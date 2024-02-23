@@ -1,0 +1,42 @@
+.stage-phase-svg-box {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  .stage-graph{
+      background-color: transparent;
+      path {
+          fill:none;
+          stroke:#E9F8FF;
+          stroke-width:3;
+          marker-end:url(#stage-graph-arrow);
+      }
+      .w{
+          marker-start:url(#stage-graph-arrow-w1);
+          marker-end:url(#stage-graph-arrow-w2);
+      }
+      .l{
+        marker-end:url(#stage-graph-arrow-l);
+      }
+      .r{
+        marker-end:url(#stage-graph-arrow-r);
+      }
+      .r{
+        marker-end:url(#stage-graph-arrow-r);
+      }
+      .non-motor{
+          stroke-dasharray:8 5;
+      }
+  }
+  .stage-graph-time {
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      &.count-down {
+        width: 90px;
+        color: #E9F8FF;
+      }
+  }
+}

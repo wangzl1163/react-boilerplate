@@ -1,0 +1,19 @@
+@prefixCls: loading-bar;
+.formateClass(@content,@set) {
+   .@{prefixCls}-@{content} {
+      each(@set,{
+        @{key}:@value;
+      });
+   }
+}
+.@{prefixCls} {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10000;
+   .formateClass(inner,{transition:width 1s linear;});
+   .formateClass(inner-color-primary,{background-color:#45b035;});
+   .formateClass(inner-failed-color-error,{background-color:#ed4014;});
+}

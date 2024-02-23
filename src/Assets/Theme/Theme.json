@@ -1,0 +1,101 @@
+{
+   "token": {
+      "colorPrimary": "#455ddc",
+      "colorInfo": "#455ddc",
+      "colorSuccess": "#2ba471",
+      "colorWarning": "#e37317",
+      "colorTextBase": "#e9f8ff",
+      "colorBgBase": "#252e3f",
+      "colorBgContainer": "#252E3F",
+      "colorBgMask": "rgba(0,0,0,0.65)",
+      "borderRadius": 4,
+      "borderRadiusLG": 6,
+      "colorText": "#E9F8FF",
+      "colorTextSecondary": "rgba(233, 248, 255, 0.55)",
+      "colorTextTertiary": "rgba(233, 248, 255, 0.35)",
+      "colorTextQuaternary": "rgba(233, 248, 255, 0.22)",
+      "colorBgElevated": "#1d2435",
+      "colorError": "#d54942",
+      "colorBorderSecondary": "#3B4557",
+      "boxShadow": "none",
+      "boxShadowSecondary": "none",
+      "paddingContentHorizontalLG": "20"
+   },
+   "components": {
+      "Button": {
+         "colorPrimary": "rgb(69, 93, 220)",
+         "colorPrimaryHover": "rgb(102, 124, 227)",
+         "colorPrimaryActive": "rgb(58, 77, 179)",
+         "colorTextDisabled": "rgb(166, 171, 191)",
+         "defaultBg": "rgb(84, 95, 120)",
+         "defaultBorderColor": "rgb(84, 95, 120)",
+         "defaultColor": "rgb(233, 248, 255)",
+         "textHoverBg": "rgb(114, 130, 147)",
+         "primaryColor": "rgb(233, 248, 255)",
+         "colorLink": "rgb(106, 129, 255)",
+         "colorLinkHover": "rgb(78, 127, 245)",
+         "colorLinkActive": "rgb(78, 127, 245)",
+         "dangerShadow": "0 0 0 rgba(255, 38, 5, 0.06)",
+         "defaultShadow": "0 0 0 rgba(0, 0, 0, 0.02)",
+         "primaryShadow": "0 0 0 rgba(5, 145, 255, 0.1)"
+      },
+      "Typography": {
+         "colorText": "rgb(233, 248, 255)",
+         "colorTextHeading": "rgb(233, 248, 255)",
+         "colorLink": "rgb(69, 93, 220)",
+         "colorLinkActive": "rgb(78, 127, 245)",
+         "colorLinkHover": "rgb(78, 127, 245)",
+         "colorWarning": "rgb(227, 115, 23)",
+         "colorError": "rgb(213, 73, 66)",
+         "colorSuccess": "rgb(43, 164, 113)"
+      },
+      "Card": {
+         "headerBg": "rgb(56, 71, 97)",
+         "actionsBg": "#252E3F",
+         "colorTextHeading": "rgb(233, 248, 255)",
+         "colorText": "rgb(233, 248, 255)",
+         "colorPrimary": "rgb(69, 93, 220)",
+         "headerHeight": 48,
+         "actionsLiMargin": "18px 0"
+      },
+      "Tabs": {
+         "itemColor": "#A6ABBF",
+         "itemActiveColor": "rgb(233, 248, 255)",
+         "itemSelectedColor": "rgb(233, 248, 255)",
+         "colorPrimary": "rgb(69, 93, 220)",
+         "colorPrimaryActive": "rgb(69, 93, 220)",
+         "colorText": "rgb(233, 248, 255)",
+         "colorTextHeading": "rgb(233, 248, 255)",
+         "colorPrimaryHover": "rgb(69, 93, 220)"
+      },
+      "Message": {
+         "colorInfo": "rgb(69, 93, 220)",
+         "colorWarning": "rgb(149, 68, 1)",
+         "colorError": "rgb(136, 31, 29)",
+         "colorSuccess": "rgb(19, 108, 69)",
+         "colorText": "rgb(233, 248, 255)"
+      },
+      "Table": {
+         "headerBg": "#252E3F",
+         "colorBgContainer": "rgba(37, 46, 63, 0.3)",
+         "borderColor": "#262E3F"
+      },
+      "Steps": {
+         "colorPrimary": "#455ddc",
+         "controlItemBgActive": "#455DDC",
+         "colorText": "#E9F8FF"
+      },
+      "Input": {
+         "activeShadow": "none"
+      },
+      "Modal": {
+         "headerBg": "#384761",
+         "contentBg": "#252E3F"
+      },
+      "Tree": {
+         "nodeSelectedBg": "#455DDC",
+         "titleHeight": "40px"
+      }
+   },
+   "algorithm": "dark"
+}

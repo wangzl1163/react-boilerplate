@@ -1,0 +1,41 @@
+.scrollBar() {
+   &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+   }
+
+   &::-webkit-scrollbar {
+      width: 6px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+   }
+}
+
+.relative() {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.flex(@justifyContent:center, @alignItems:center) {
+   display: flex;
+   justify-content: @justifyContent;
+   align-items: @alignItems;
+}
+
+.flex-column(@justifyContent:center, @alignItems:center) {
+   .flex(@justifyContent, @alignItems);
+   flex-direction: column;
+}
+
+.inline-flex(@justifyContent:center, @alignItems:center) {
+   .flex(@justifyContent, @alignItems);
+   display: inline-flex;
+}
+
+// 计算 padding margin 等边距
+.computed-pt(@key,@sale:2) {
+   @{key}: 4px * @sale !important;
+}

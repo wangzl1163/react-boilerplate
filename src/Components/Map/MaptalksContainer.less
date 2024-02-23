@@ -1,0 +1,37 @@
+.maptalks-control {
+   width: 100%;
+   height: 100%;
+
+   > div:nth-child(3) {
+      width: 100%;
+      height: 100%;
+      position: static !important;
+
+      .maptalks-zoom {
+         right: 24px;
+         bottom: 12px;
+         position: absolute;
+         transition: right 0.3s;
+
+         .maptalks-zoom-slider {
+            margin: 0;
+
+            .maptalks-zoom-zoomin,
+            .maptalks-zoom-zoomout {
+               background-color: theme('colors.fill.base');
+               border-color: theme('colors.line.base');
+            }
+         }
+      }
+   }
+
+   > div {
+      > div {
+         > div {
+            width: 82px !important;
+            color: #bdc3cf !important;
+            border-color: #bdc3cf !important;
+         }
+      }
+   }
+}

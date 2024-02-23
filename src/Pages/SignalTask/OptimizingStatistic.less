@@ -1,0 +1,23 @@
+.ant-tag {
+   width: 64px;
+   line-height: 30px;
+   text-align: center;
+
+   &:last-of-type {
+      margin-inline-end: 0;
+   }
+}
+
+.ant-tag-checkable {
+   background-color: #454d5d;
+   color: theme("colors.font.auxiliary");
+
+   &:not(.ant-tag-checkable-checked):hover {
+      color: theme("colors.font.primary");
+   }
+}
+
+.ant-tag-checkable-checked {
+   background-color: theme("colors.brand.base");
+   color: theme("colors.font.primary");
+}

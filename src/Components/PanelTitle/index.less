@@ -1,0 +1,60 @@
+.panel-title {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 54px;
+   .left {
+      display: flex;
+      align-items: center;
+      width: 448px;
+      height: 100%;
+      background-image: url('@/Assets/Images/title_bg.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-origin: padding-box;
+      & > .title-front {
+         display: inline-block;
+         width: 40px;
+         height: 44px;
+         background: url('@/Assets/Images/title_icon.png');
+         background-size: contain;
+      }
+      .title-text {
+         margin: 0 8px 0 -15px;
+         line-height: 44px;
+         font-size: 16px;
+         font-weight: 600;
+         color: #e9f8ff;
+         font-family:
+            PingFangSC-Semibold,
+            PingFang SC;
+         letter-spacing: 1px;
+         text-shadow:
+            0 0 0.12rem #455ddc,
+            0 0 0.1rem rgba(106, 129, 255, 0.7);
+         -webkit-text-stroke: 0 #e9f8ff;
+      }
+      .tooltip-icon {
+         display: inline-block;
+         width: 14px;
+         height: 14px;
+         background: url('@/Assets/Icons/Img/help.png') no-repeat;
+         background-size: 100%;
+      }
+      & > .spliter {
+         margin-right: 8px;
+         font-size: 14px;
+         font-family:
+            PingFangSC-Semibold,
+            PingFang SC;
+         font-weight: 600;
+      }
+   }
+   .right {
+      position: absolute;
+      right: 0;
+      top: 6px;
+   }
+}

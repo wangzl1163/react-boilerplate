@@ -1,0 +1,90 @@
+
+.operation-plan {
+  height: 320px;
+  &>.content {
+    padding: 12px 16px;
+    &>.top {
+      display: flex;
+      justify-content: space-between;
+      height: 32px;
+      &>.left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: @font-shallow-color;
+        &>span {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        &>div {
+          &>span {
+            margin-right: 20px;
+            color: @font-shallow-color;
+          }
+        }
+      }
+      &>.btns {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    &>.stagesSvg {
+      display: flex;
+      width: 100%;
+      overflow-x: auto;
+      &>.stageSvg {
+        flex: 0 0 160px;
+        width: 160px; 
+        height: 200px;
+        line-height: 40px;
+        margin: 8px; 
+        display: inline-block;
+        background: rgba(47, 55, 76, .7);
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .stage-no{
+          height: 40px;
+          padding: 0 10px;
+          font-weight: bold;
+          border-bottom: 1px solid @bg12;
+        }
+        .card-body{
+          position: relative;
+          height: 160px;
+          & > .stage-time-input {
+            position: absolute;
+            top: 64px;
+            left: 36px;
+          }
+          
+        }
+        &.active {
+          background: #2F374C;
+          box-shadow: 4px 4px 8px 1px rgba(6,8,17,0.5), -4px -4px 8px 1px rgba(69,77,93,0.5);
+          border-radius: 2px;
+          border: 1px solid @primary-color;
+        }
+      }
+    }
+  }
+  &.cq {
+    &>.content {
+      border: 1px solid #006FC1;
+      background: rgba(21, 77, 137, 0.5);
+      &>.stagesSvg {
+        &>.stageSvg {
+          background: rgba(38, 122, 208, .3);
+          &.active {
+            background: rgba(38, 122, 208,.9);
+            box-shadow: none;
+            border: 1px solid #6A81FF;
+          }
+        }
+      }
+    }
+  }
+}
