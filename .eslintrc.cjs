@@ -2,8 +2,8 @@
  * @Description:
  * @Author:
  * @Date: 2023-10-20 14:00:02
- * @LastEditTime: 2023-12-11 10:25:40
- * @LastEditors:
+ * @LastEditTime: 2024-05-20 14:28:31
+ * @LastEditors: Please set LastEditors
  */
 module.exports = {
    root: true,
@@ -11,7 +11,7 @@ module.exports = {
    extends: ["eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime", "plugin:react-hooks/recommended", "prettier"],
    ignorePatterns: ["dist"],
    parserOptions: { ecmaVersion: "latest", sourceType: "module" },
-   settings: { react: { version: "18.2" } },
+   settings: { react: { version: "18.3.1" } },
    plugins: ["react-refresh"],
    rules: {
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
