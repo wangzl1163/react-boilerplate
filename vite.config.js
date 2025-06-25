@@ -3,7 +3,7 @@
  */
 /* eslint-disable no-unused-vars */
 import * as path from "path";
-import { defineConfig, loadEnv, splitVendorChunkPlugin } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import compressionPlugin from "vite-plugin-compression";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
@@ -24,7 +24,6 @@ const env = loadEnv(process.env.mode ?? process.env.NODE_ENV, process.cwd());
 export default defineConfig({
    base: env.VITE_BASE ?? "/", // "/" 为 vite 默认值
    plugins: [
-      splitVendorChunkPlugin(),
       react(),
       // 支持生成 js、css 文件的 gzip 压缩文件
       compressionPlugin({

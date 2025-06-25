@@ -8,6 +8,7 @@ import themeJson from "./Assets/Theme/Theme.json";
 import Store from "@/Store";
 import App from "./App";
 
+import '@ant-design/v5-patch-for-react-19';
 import "dayjs/locale/zh-cn";
 import "virtual:svg-icons-register";
 import "./Assets/Style/index.css";
